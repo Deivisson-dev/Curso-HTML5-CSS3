@@ -1,0 +1,29 @@
+body{
+    background-color: #aeced2;
+}
+
+h1{
+    text-align: center;
+}
+
+.qse{
+    text-align: center;
+}
+
+
+.foto-perfil{
+    border-radius: 50%;
+}
+
+div{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    display: inline;
+    text-align: center;
+}
