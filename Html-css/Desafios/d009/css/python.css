@@ -1,0 +1,22 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+
+body{
+    background-color: #1d1d1d;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+div{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
