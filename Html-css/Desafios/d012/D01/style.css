@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 400px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
