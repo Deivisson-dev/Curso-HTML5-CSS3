@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .mail{
+            margin-top: 10px;
+        }
+
+        div{
+            padding: 5px;
+        }
+
+        .esp{
+            margin-top: 10px;
+        }
+
+        legend{
+            margin-bottom: 10px;
+        }
+
+        input{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <h1>Teste de Formulário</h1>
+        <div class="sx">
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc"> <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem"> <label for="fem">Feminino</label>
+        </div>
+        <div class="esp">
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="bask" id="bask"> <label for="bask">Basquete</label> <br>
+            <input type="checkbox" name="fut" id="fut"> <label for="fut">Futebol</label> <br>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </div>
+    </form>
+</body>
+</html>
