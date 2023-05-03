@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+    form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+        }
+    div{
+        padding: 5px;
+    }
+
+    input{
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="POST">
+        <h1>Teste de formulário</h1>
+        <div>
+            <label for="color">Cor:</label>
+            <input type="color" name="color" id="color" required>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </div>
+        <div>
+            <label for="file">Foto:</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="range">NIvel de Satisfação</label>
+            <input type="range" name="range" id="range" min="1" max="10" required>
+        </div>
+    </form>
+</body>
+</html>
