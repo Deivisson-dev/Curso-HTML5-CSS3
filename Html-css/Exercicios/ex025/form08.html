@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }  
+        
+        form{
+            padding: 20px;
+        }
+
+        input{
+            padding: 5px;
+            margin: 10px;
+        }
+
+        h1{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <h1>Exemplo de Formulário</h1>
+        <div>
+            <label for="numberone">Número 1:</label>
+            <input type="number" name="numberone" id="numberone" min="0" max="50" required oninput="soma.innerHTML = Number(numberone.value) + Number(numbertwo.value)">
+        </div>
+        <div>
+            <label for="numbertwo">Número 2:</label>
+            <input type="number" name="numbertwo" id="numbertwo" min="0" max="50" required oninput="soma.innerHTML = Number(numberone.value) + Number(numbertwo.value)">
+        </div>
+
+        <div>
+            <label for="soma">Soma:</label>
+            <output name="soma" id="soma">0</output>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculo de Idade</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <h1>Calculo de Idade</h1>
+        <div>
+            <label for="ano">Ano que você nasceu:</label>
+            <input type="number" name="ano" id="ano" min="1900" max="2023" required oninput="calcIdade()">
+        </div>
+        <div>
+            <label for="idade">Sua idade é:</label>
+            <output id="idade">0</output>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

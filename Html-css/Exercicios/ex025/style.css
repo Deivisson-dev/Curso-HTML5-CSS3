@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+form{
+    padding: 20px;
+}
+
+input{
+    padding: 5px;
+    margin: 10px;
+}
+
+h1{
+    margin: 10px;
+}
