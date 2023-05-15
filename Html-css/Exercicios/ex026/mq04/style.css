@@ -1,0 +1,126 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    background: black url('/img/back-phone.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+main{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+#tablet, #print, #pc, #tv{
+    display: none;
+}
+
+#phone{
+    display: block;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background: black url('/img/back-tablet.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #phone{
+        display: none;
+    }
+
+    #tablet{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background: black url('/img/back-pc.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #tablet{
+        display: none;
+    }
+
+    #pc{
+        display: block;
+        margin: auto;
+    }
+
+    #phone{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    body{
+        background: black url('/img/back-tv.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #pc{
+        display: none;
+    }
+
+    #tv{
+        display: block;
+        margin: auto;
+    }
+
+    #phone{
+        display: none;
+    }
+}
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background: url('/img/back-print.jpg');
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    h1{
+        color: black;
+    }
+
+    #tablet, #pc, #tv, #phone{
+        display: none;
+    }
+
+    #print{
+        display: block;
+        margin: auto;
+    }
+}
