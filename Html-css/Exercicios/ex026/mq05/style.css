@@ -1,0 +1,216 @@
+*{
+    padding: 0px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: lightgray;
+}
+
+header{
+    background-color: gray;
+}
+
+header h1{
+    text-align: center;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+
+
+nav{
+    display: none;
+    padding: 5px;
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+main h2{
+    padding-bottom: 20px;
+}
+
+main p{
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 26px;
+}
+
+button{
+    display: block;
+}
+
+
+.overlay{
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+.overlay a{
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: rgb(143, 142, 142);
+}
+
+.overlay .closebtn{
+    position: absolute;
+    color: white;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.nav-button{
+    border: 0;
+    border-radius: 4px;
+    background-color: gray;
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+    margin: auto;
+}
+
+
+@media screen and (max-height: 450px){
+    .overlay a{
+        font-size: 20px;
+    }
+
+    .overlay .closebtn{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    main{
+        width: 50vw;
+    }
+
+    main h2{
+        text-align: center;
+    }
+
+    .overlay{
+        display: none;
+    }
+
+    button{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 0px;
+    }
+
+    nav a{
+        background-color: rgba(20, 20, 20, 0.61);
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    main{
+        width: 90vw;
+    }
+
+    main h2{
+        text-align: center;
+    }
+
+    .overlay{
+        display: none;
+    }
+
+    button{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 0px;
+    }
+
+    nav a{
+        background-color: rgba(20, 20, 20, 0.61);
+        padding: 8px;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    main{
+        width: 60vw;
+    }
+
+    main h2{
+        text-align: center;
+    }
+
+    .overlay{
+        display: none;
+    }
+
+    button{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 0px;
+    }
+
+    nav a{
+        background-color: rgba(20, 20, 20, 0.61);
+        padding: 8px;
+    }
+}
